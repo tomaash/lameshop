@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @product.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @product.price %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @product.color %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @product.weight %>
+</p>
+
+<p>
+  <b>Date available:</b>
+  <%=h @product.date_available %>
+</p>
+
+<p>
+  <b>In store:</b>
+  <%=h @product.in_store %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

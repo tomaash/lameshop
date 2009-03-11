@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  price: 1
+  color: MyString
+  weight: 1
+  date_available: 2009-03-05
+  in_store: false
+
+two:
+  name: MyString
+  price: 1
+  color: MyString
+  weight: 1
+  date_available: 2009-03-05
+  in_store: false

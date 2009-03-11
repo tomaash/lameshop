@@ -1,0 +1,29 @@
+<h1>This is a product catalog</h1>
+<p>Product listing</p>
+
+<% for product in @products %>
+  <h2> <%= product.name %>
+  <%= link_to 'Buy',
+  :controller => :products,
+  :action => :buy,
+  :id => product.id 
+   %> </h2>
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Color</th>
+    <th>Weight</th>
+    <th>Date available</th>
+    <th>In store</th>
+  </tr>
+  <tr>
+<td><%= product.price %></td>
+<td><%= product.color %></td>
+<td><%= product.weight %></td>
+<td><%= product.date_available %></td>
+<td><%= product.in_store %></td>
+      
+  </tr>
+  </table>
+<% end %>
+

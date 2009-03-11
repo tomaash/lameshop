@@ -1,0 +1,20 @@
+<h1>This is you shopping cart</h1>
+  
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Color</th>
+    <th>Weight</th>
+  </tr>
+
+<% for product in @cart %>
+  <tr>
+    <td><%=h product.name %></td>
+    <td><%=h product.price %></td>
+    <td><%=h product.color %></td>
+    <td><%=h product.weight %></td>
+    <td><%= link_to 'Remove', :controller=>:product, :action=>:remove, :id=>product.id %></td>
+    </tr>
+<% end %>
+</table>
